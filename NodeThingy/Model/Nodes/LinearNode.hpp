@@ -44,4 +44,17 @@ LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(
 }
 
 
+
+template <class Type>
+void LinearNode<Type> :: setNextNode(LinearNode<Type> * nextNodePointer)
+{
+    this->next = nextNodePointer;
+}
+
+template <class Type>
+LinearNode<Type> * LinearNode<Type> :: getNextNode()
+{
+    return next;
+}
+
 #endif /* LinearNode_h */
