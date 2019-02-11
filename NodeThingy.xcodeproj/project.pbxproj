@@ -43,6 +43,7 @@
 		7ADEE4AB2211F82800899FDC /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		7ADEE4AE2211FA3800899FDC /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		7ADEE4AF2212004B00899FDC /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
+		7ADEE4B0221212A300899FDC /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		7AE1CB47220A15EA007A26ED /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		7AE1CB48220A15EA007A26ED /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		7AE1CB51220A224D007A26ED /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				7A07754922023A2900E1EDBF /* Array.hpp */,
 				7A41CAC9220CBA7300488087 /* List.hpp */,
 				7ADEE4AE2211FA3800899FDC /* LinkedList.hpp */,
+				7ADEE4B0221212A300899FDC /* Queue.hpp */,
 			);
 			name = Linear;
 			path = ..;
