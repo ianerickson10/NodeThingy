@@ -167,6 +167,24 @@ Type LinkedList<Type> :: remove(int index)
 }
 
 template <class Type>
+LinearNode<Type> * LinkedList<Type> :: getEnd()
+{
+    return this->end;
+}
+
+template <class Type>
+LinearNode<Type> * LinkedList<Type> :: getFront()
+{
+    return this->front;
+}
+
+template <class Type>
+int LinkedList<Type> :: getSize() const
+{
+    return this->size;
+}
+
+template <class Type>
 bool LinkedList<Type> :: contains(Type thingToFind)
 {
     bool exists = false;
