@@ -32,4 +32,4 @@ public:
     Type remove(int index);
 }
 
-#endif /* Queue_h */
+#endif /* Queue_hpp */

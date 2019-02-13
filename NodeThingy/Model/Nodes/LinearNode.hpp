@@ -45,6 +45,8 @@ LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(
 
 
 
+
+
 template <class Type>
 void LinearNode<Type> :: setNextNode(LinearNode<Type> * nextNodePointer)
 {
