@@ -15,7 +15,7 @@
 using namespace std;
 
 template <class Type>
-class Queue : public LikedList<Type>
+class Queue : public LinkedList<Type>
 {
 public:
     Queue();
@@ -30,7 +30,7 @@ public:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
-}
+};
 
 template <class Type>
 Queue<Type> :: Queue() : LinkedList<Type>()
@@ -74,12 +74,12 @@ void Queue<Type> :: addAtIndex(int index, Type item)
 }
 
 template <class Type>
-void Queue<type> :: add(Type item)
+void Queue<Type> :: add(Type item)
 {
     enqueue(item);
 }
 
-template <class type>
+template <class Type>
 Type Queue<Type> :: dequeue()
 {
     assert(this->size > 0);
@@ -122,7 +122,7 @@ Type Queue<Type> :: peek()
 template <class Type>
 Type Queue<Type> :: getFromIndex(int index)
 {
-    assert(index == 0)
+    assert(index == 0);
     return peek();
 }
 

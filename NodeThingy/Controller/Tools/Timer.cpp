@@ -22,7 +22,7 @@ void Timer :: resetTimer()
 
 void Timer :: startTimer()
 {
-    exacutionTime = clock();
+    executionTime = clock();
 }
 
 void Timer :: stopTimer()
@@ -31,7 +31,7 @@ void Timer :: stopTimer()
     executionTime = clock() - executionTime;
 }
 
-void Timer :: displayInfomation()
+void Timer :: displayInformation()
 {
     cout << "The ececution time is: " << executionTime << endl;
     cout << "In normal time it is " << double (executionTime)/CLOCKS_PER_SEC << " seconds" << endl;

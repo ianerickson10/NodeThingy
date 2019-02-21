@@ -9,8 +9,8 @@
 #ifndef Array_hpp
 #define Array_hpp
 
-#includes <assert.h>
-#includes <iosteam>
+#include <assert.h>
+#include <iostream>
 
 using namespace std;
 
@@ -25,7 +25,7 @@ public:
     
     Array<Type>(const Array<Type> & toCopy);
     
-    ~Array,<Type>();
+    ~Array<Type>();
     
     Array<Type> & operator = (const Array<Type> & toReplace);
     Type& operator [] (int index);
@@ -34,7 +34,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 
 template <class Type>
 Array<Type> :: Array(int size)
@@ -92,7 +92,7 @@ Type & Array<Type> :: operator [] (int index)
 }
 
 template <class Type>
-Type Array<Type> :: operator [] (int index)
+Type Array<Type> :: operator [] (int index) const
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
@@ -105,9 +105,9 @@ int Array<Type> :: getSize() const
 }
 
 template <class Type>
-Type Array<Type :: getFromIndex(int index)
+Type Array<Type> :: getFromIndex(int index)
 {
-    assert(index >= && index < size);
+    assert(index >= 0 && index < size);
     
     Type value = internalArray[index];
     

@@ -57,11 +57,11 @@ LinkedList<Type> :: ~LinkedList()
 template <class Type>
 void LinkedList<Type> :: add(Type item)
 {
-    linearNode<Type> * newData = new LinearNode<Type>(item);
+    LinearNode<Type> * newData = new LinearNode<Type>(item);
     
     if (this->size == 0)
     {
-        this->front = new Data;
+        this->front = newData;
     }
     else
     {
@@ -82,7 +82,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
     else
     {
-        linearNode<Type> * toBeAdded = new LinearNode<Type>(item);
+        LinearNode<Type> * toBeAdded = new LinearNode<Type>(item);
         if (index == 0)
         {
             toBeAdded->setNextNode(front);
@@ -150,7 +150,7 @@ Type LinkedList<Type> :: remove(int index)
         
         if (index == this->size - 1)
         {
-            previous->setnextNode(nullptr);
+            previous->setNextNode(nullptr);
             end = previous;
         }
         else

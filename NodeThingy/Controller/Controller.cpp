@@ -12,6 +12,7 @@ void Controller :: start()
 {
     cout << "Welcome to data app" << endl;
     usingNodes();
+//    testLinear();
 }
 
 void Controller :: usingNodes()
@@ -24,3 +25,9 @@ void Controller :: usingNodes()
     cout << wordHolder.getData() << endl;
     
 }
+
+//void Controller :: testLinear()
+//{
+//    LinearTester lookieHere;
+//    lookieHere.testVsSTL();
+//}

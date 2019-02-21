@@ -11,6 +11,7 @@
 		7A077543220225F300E1EDBF /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A077542220225F300E1EDBF /* Runner.cpp */; };
 		7A41CACC220CC88D00488087 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A41CACB220CC88D00488087 /* CrimeData.cpp */; };
 		7A41CAD0220CC92300488087 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A41CACF220CC92300488087 /* Music.cpp */; };
+		7A6E31C0221C8A0D00848516 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E31BE221C8A0D00848516 /* LinearTester.cpp */; };
 		7AE1CB49220A15EA007A26ED /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1CB47220A15EA007A26ED /* Timer.cpp */; };
 		7AE1CB53220A224D007A26ED /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1CB51220A224D007A26ED /* FileController.cpp */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,8 @@
 		7A41CACD220CC89D00488087 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		7A41CACE220CC91900488087 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		7A41CACF220CC92300488087 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
+		7A6E31BE221C8A0D00848516 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
+		7A6E31BF221C8A0D00848516 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 		7ADEE4AB2211F82800899FDC /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		7ADEE4AE2211FA3800899FDC /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		7ADEE4AF2212004B00899FDC /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
@@ -49,6 +52,8 @@
 		7AE1CB48220A15EA007A26ED /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		7AE1CB51220A224D007A26ED /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		7AE1CB52220A224D007A26ED /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		7AF52E03221F2906005A0AF6 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
+		7AF52E04221F2EFA005A0AF6 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +86,8 @@
 		7A0775332202257E00E1EDBF /* NodeThingy */ = {
 			isa = PBXGroup;
 			children = (
-				7A07753E220225C900E1EDBF /* Resources */,
+				7A6E31C2221C8F0100848516 /* Resources */,
+				7A6E31BD221C89C100848516 /* Tester */,
 				7A07753D220225C300E1EDBF /* Diagrams */,
 				7A07753C220225BC00E1EDBF /* Controller */,
 				7A07753B220225B500E1EDBF /* Model */,
@@ -92,7 +98,7 @@
 		7A07753B220225B500E1EDBF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7A0775462202269400E1EDBF /* Linear */,
+				7A6E31C1221C8ED800848516 /* Linear */,
 				7A0775452202267800E1EDBF /* Nodes */,
 			);
 			path = Model;
@@ -118,7 +124,39 @@
 			path = Diagrams;
 			sourceTree = "<group>";
 		};
-		7A07753E220225C900E1EDBF /* Resources */ = {
+		7A0775452202267800E1EDBF /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				7A0775442202260600E1EDBF /* Node.hpp */,
+				7A0775472202334B00E1EDBF /* LinearNode.hpp */,
+				7AF52E03221F2906005A0AF6 /* DoubleNode.hpp */,
+				7AF52E04221F2EFA005A0AF6 /* CircularList.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		7A6E31BD221C89C100848516 /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				7A6E31BE221C8A0D00848516 /* LinearTester.cpp */,
+				7A6E31BF221C8A0D00848516 /* LinearTester.hpp */,
+			);
+			path = Tester;
+			sourceTree = "<group>";
+		};
+		7A6E31C1221C8ED800848516 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				7A07754922023A2900E1EDBF /* Array.hpp */,
+				7A41CAC9220CBA7300488087 /* List.hpp */,
+				7ADEE4AE2211FA3800899FDC /* LinkedList.hpp */,
+				7ADEE4B0221212A300899FDC /* Queue.hpp */,
+				7A239B9C22149CB00058E89C /* Stack.hpp */,
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		7A6E31C2221C8F0100848516 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				7ADEE4AF2212004B00899FDC /* music.csv */,
@@ -128,29 +166,7 @@
 				7A41CACD220CC89D00488087 /* CrimeData.hpp */,
 				7A41CACB220CC88D00488087 /* CrimeData.cpp */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		7A0775452202267800E1EDBF /* Nodes */ = {
-			isa = PBXGroup;
-			children = (
-				7A0775442202260600E1EDBF /* Node.hpp */,
-				7A0775472202334B00E1EDBF /* LinearNode.hpp */,
-			);
-			path = Nodes;
-			sourceTree = "<group>";
-		};
-		7A0775462202269400E1EDBF /* Linear */ = {
-			isa = PBXGroup;
-			children = (
-				7A07754922023A2900E1EDBF /* Array.hpp */,
-				7A41CAC9220CBA7300488087 /* List.hpp */,
-				7ADEE4AE2211FA3800899FDC /* LinkedList.hpp */,
-				7ADEE4B0221212A300899FDC /* Queue.hpp */,
-				7A239B9C22149CB00058E89C /* Stack.hpp */,
-			);
-			name = Linear;
-			path = ..;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7AE1CB4A220A15FB007A26ED /* Tools */ = {
@@ -224,6 +240,7 @@
 				7A41CAD0220CC92300488087 /* Music.cpp in Sources */,
 				7A077543220225F300E1EDBF /* Runner.cpp in Sources */,
 				7AE1CB53220A224D007A26ED /* FileController.cpp in Sources */,
+				7A6E31C0221C8A0D00848516 /* LinearTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
