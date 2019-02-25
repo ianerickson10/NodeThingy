@@ -45,3 +45,43 @@ void LinearTester :: testVsSTL()
     
 }
 
+void LinearTester :: testVsStack()
+{
+    int randomIndex = rand() % moreCrimes.getSize();
+    
+    crimeTimerSTL.startTimer();
+    crimes[randomIndex];
+    crimeTimerSTL.stopTimer();
+    
+    crimeTimerOOP.startTimer();
+    moreCrimes.getFromIndex(randomIndex);
+    crimeTimerOOP.stopTimer();
+    
+    cout << "This is the STL random retrieval: " << endl;
+    crimeTimerSTL.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    crimeTimerOOP.displayInformation();
+    cout << "A difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerSTL.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    randomIndex = rand() % musicList.getSize();
+    
+    musicSTL.startTimer();
+    tunez[randomIndex];
+    musicSTL.stopTimer();
+    
+    cout << "This is the STL random retreival: " << endl;
+    musicSTL.displayInformation();
+    cout << "This is the OOP Node random retrieval: " << endl;
+    musicOOP.displayInformation();
+    cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicSTL.getTimeInMicroseconds() << " microseconds" << endl;
+}
+
+void LinearTester :: testVsQueue()
+{
+    
+}
+
+void LinearTester :: testVsDouble()
+{
+    
+}

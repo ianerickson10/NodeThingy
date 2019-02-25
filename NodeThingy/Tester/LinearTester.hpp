@@ -9,7 +9,7 @@
 #ifndef LinearTester_hpp
 #define LinearTester_hpp
 
-#include <stdio.h>
+#include <iostream>
 
 #include "../Controller/Tools/Timer.hpp"
 #include "../Controller/FileController.hpp"
@@ -23,6 +23,9 @@ class LinearTester
 {
 public:
     void testVsSTL();
+    void testVsStack();
+    void testVsQueue();
+    void testVsDouble();
 };
 
 #endif /* LinearTester_hpp */
