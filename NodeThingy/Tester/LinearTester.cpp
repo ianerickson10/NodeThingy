@@ -47,10 +47,17 @@ void LinearTester :: testVsSTL()
 
 void LinearTester :: testVsStack()
 {
+    vector<CrimeData> Crimes = FileController :: readCrimeDataToVector("../Resources/crime.csv");
+    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("../Resources/crime.csv");
+    vector<Music> tunez = FileController :: musicDataToVector("../Resources/music.csv");
+    LinkedList<Music> musicList = FileController :: musicDataToList("../Resources/music.csv");
+    Timer crimeTimerSTL, crimeTimerOOP, musicSTL, musicOOP;
+
+
     int randomIndex = rand() % moreCrimes.getSize();
     
     crimeTimerSTL.startTimer();
-    crimes[randomIndex];
+    Crimes[randomIndex];
     crimeTimerSTL.stopTimer();
     
     crimeTimerOOP.startTimer();

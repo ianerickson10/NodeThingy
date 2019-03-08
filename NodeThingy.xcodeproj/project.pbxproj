@@ -54,6 +54,7 @@
 		7AE1CB52220A224D007A26ED /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		7AF52E03221F2906005A0AF6 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		7AF52E04221F2EFA005A0AF6 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
+		7AFCE1D3222DC3D50046BA8C /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		7A07753B220225B500E1EDBF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7AFCE1D2222DC3390046BA8C /* Non-Linear */,
 				7A6E31C1221C8ED800848516 /* Linear */,
 				7A0775452202267800E1EDBF /* Nodes */,
 			);
@@ -176,6 +178,14 @@
 				7AE1CB48220A15EA007A26ED /* Timer.hpp */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		7AFCE1D2222DC3390046BA8C /* Non-Linear */ = {
+			isa = PBXGroup;
+			children = (
+				7AFCE1D3222DC3D50046BA8C /* Graph.hpp */,
+			);
+			path = "Non-Linear";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
